@@ -1,3 +1,13 @@
+@font-face {
+    font-family: poppins;
+    src: url(Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'open sans';
+    src: url(OpenSans.ttf);
+}
+
 body {
     /* background-color: #567292;*/
     margin: 0;
@@ -567,6 +577,9 @@ footer {
 /*media queries 2*/
 
 @media (max-width:500px) {
+    .logo {
+        width: 80%;
+    }
     /*section one*/
     .S-one {
         width: 100%;
