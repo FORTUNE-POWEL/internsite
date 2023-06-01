@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'open sans';
+    overflow-x: hidden;
 }
 
 h2 {
@@ -36,6 +37,10 @@ header nav {
     text-align: right;
 }
 
+header nav span {
+    display: none;
+}
+
 header nav ul {
     list-style-type: none;
 }
@@ -55,6 +60,12 @@ header nav ul li [target="_blank"] {
     background-color: #06752E;
     color: #fff;
     border-radius: 3px;
+    text-decoration: none;
+}
+
+header nav ul li [target="_blank"]:hover {
+    text-decoration: underline;
+    transition: 1s;
 }
 
 
@@ -64,6 +75,7 @@ header nav ul li [target="_blank"] {
 /*section one*/
 
 .S-one {
+    width: 100%;
     height: 4in;
     -moz-animation-name: slide;
     -webkit-animation-name: slide;
@@ -103,6 +115,7 @@ header nav ul li [target="_blank"] {
 /*section two*/
 
 .s-two {
+    width: 100%;
     text-align: center;
     background-color: #F4F6F4;
     height: auto;
@@ -139,9 +152,11 @@ header nav ul li [target="_blank"] {
     border: 1px solid #DDDDDD;
     border-radius: 10px;
     text-align: left;
+    padding: 20px;
 }
 
 .S-three {
+    width: 100%;
     text-align: center;
 }
 
@@ -164,8 +179,10 @@ header nav ul li [target="_blank"] {
 /*section four*/
 
 .S-four {
+    width: 100%;
     display: grid;
     grid-template-columns: auto auto;
+    gap: 10px;
     background-color: #F4F6F4;
 }
 
@@ -201,6 +218,7 @@ header nav ul li [target="_blank"] {
 }
 
 .S-five {
+    width: 100%;
     background-color: #0A9060;
     color: #fff;
     height: 3.2in;
@@ -213,6 +231,7 @@ header nav ul li [target="_blank"] {
 /*section six*/
 
 .S-six {
+    width: 100%;
     display: grid;
     grid-template-columns: auto auto;
 }
@@ -225,6 +244,11 @@ header nav ul li [target="_blank"] {
     text-decoration: none;
 }
 
+[src="7.jpg"] {
+    width: 360.656px;
+    height: 308px;
+}
+
 
 /*section six*/
 
@@ -232,6 +256,7 @@ header nav ul li [target="_blank"] {
 /*section seven*/
 
 .S-seven {
+    width: 100%;
     background-color: #F4F6F4;
 }
 
@@ -254,6 +279,7 @@ header nav ul li [target="_blank"] {
 /*section eight*/
 
 .S-eight {
+    width: 100%;
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 20px;
@@ -266,6 +292,7 @@ header nav ul li [target="_blank"] {
 /*section nine*/
 
 .S-nine {
+    width: 100%;
     background-color: #393939;
     display: grid;
     grid-template-columns: 20% 20% 20% 20%;
@@ -300,6 +327,7 @@ footer {
     color: #fff;
     display: block;
     padding: 20px;
+    width: 100%;
 }
 
 
@@ -328,3 +356,305 @@ footer {
 
 
 /*animation*/
+
+
+/*media queries*/
+
+@media(max-width:1079px) {
+    /*navigation bar*/
+    header {
+        box-shadow: 1px 1px 10px grey;
+        display: grid;
+        grid-template-columns: auto auto;
+        height: 1in;
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+    }
+    header nav {
+        text-align: right;
+        position: fixed;
+        right: 10px;
+        top: 0;
+        display: block;
+    }
+    header nav span {
+        display: inline;
+        width: 30px;
+    }
+    header nav ul {
+        list-style-type: none;
+        display: none;
+        transition: 0.5s;
+    }
+    header nav:hover ul {
+        display: block;
+    }
+    header nav ul li {
+        display: block;
+        margin-bottom: 20px;
+    }
+    header nav ul li a {
+        text-decoration: none;
+        color: #000;
+        font-size: 15px;
+        padding: 15px 20px;
+    }
+    header nav ul li [target="_blank"] {
+        background-color: #06752E;
+        color: #fff;
+        border-radius: 3px;
+        margin-right: 20px;
+    }
+    /*navigation bar*/
+    /*section three*/
+    .S-three section {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 25px;
+    }
+    .S-three section div.figure {
+        border: 1px solid #DDDDDD;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    .S-three {
+        width: 100%;
+        text-align: center;
+    }
+    .S-three p {
+        color: #4E5652;
+        text-align: justify;
+    }
+    .S-three h3 {
+        color: #1BAE70;
+        text-align: center;
+    }
+    .S-three h4 {
+        text-align: center;
+        font-size: larger;
+    }
+    .s-three figure img {
+        max-width: 100%;
+    }
+    /*section three*/
+    /*section four*/
+    .S-four {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        background-color: #F4F6F4;
+    }
+    .S-four p {
+        color: #4E5652;
+    }
+    .S-four section {
+        text-align: center;
+        padding: 20px;
+    }
+    /*section four*/
+    /*section five*/
+    .S-five h2,
+    .S-five p {
+        text-align: center;
+    }
+    .S-five a[title="Involved"] {
+        background-color: #1BAE70;
+        color: #fff;
+        border-radius: 3px;
+        padding: 15px 20px;
+        text-decoration: none;
+        display: block;
+        width: 90px;
+        text-align: center;
+        margin: 10px auto;
+    }
+    .S-five a[title="Donate"] {
+        border: 2px solid #fff;
+        border-radius: 3px;
+        padding: 15px 20px;
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        width: 90px;
+        text-align: center;
+        margin: 10px auto;
+    }
+    .S-five {
+        width: 100%;
+        background-color: #0A9060;
+        color: #fff;
+        height: auto;
+    }
+    /*section five*/
+    /*section six*/
+    .S-six {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        padding: 20px;
+    }
+    .S-six h2 {
+        text-align: center;
+    }
+    .S-six p {
+        text-align: justify;
+    }
+    .S-six figure {
+        margin: auto;
+        width: 80%;
+    }
+    .S-six figure img {
+        border-radius: 5px;
+        width: 100%;
+        height: auto;
+    }
+    .S-six a {
+        border: 2px solid #1BAE70;
+        color: #1BAE70;
+        border-radius: 3px;
+        padding: 15px 20px;
+        text-decoration: none;
+        display: block;
+        width: 100px;
+        margin: auto;
+        text-align: center;
+    }
+    /*section six*/
+    /*section seven*/
+    .S-seven {
+        width: 100%;
+        background-color: #F4F6F4;
+        padding: 10px;
+    }
+    .S-seven p {
+        text-align: center;
+    }
+    .S-seven h2 {
+        text-align: center;
+    }
+    .S-seven article {
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 30px;
+        column-gap: 2px;
+    }
+    .S-seven article img {
+        margin: auto;
+    }
+    /*section seven*/
+    /*section eight*/
+    .S-eight {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        column-gap: 20px;
+        padding: 20px;
+    }
+    .S-eight h2 {
+        text-align: center;
+    }
+    .S-eight p {
+        text-align: justify;
+    }
+    /*section eight*/
+}
+
+
+/*media queries*/
+
+
+/*media queries 2*/
+
+@media (max-width:500px) {
+    /*section one*/
+    .S-one {
+        width: 100%;
+        height: 5in;
+        -moz-animation-name: slide;
+        -webkit-animation-name: slide;
+        -o-animation-name: slide;
+        animation-name: slide;
+        -moz-animation-duration: 30s;
+        -webkit-animation-duration: 30s;
+        -o-animation-duration: 30s;
+        animation-duration: 30s;
+        -moz-animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+        -o-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-size: cover, cover, cover;
+        background-position: center, center, center;
+        background-color: rgba(55, 49, 47, 0.5), rgba(55, 49, 47, 0.5), rgba(55, 49, 47, 0.5);
+    }
+    .S-one article {
+        color: #fff;
+        transform: translate(0, 150px);
+    }
+    .S-one a {
+        text-decoration: none;
+        color: white;
+        padding: 15px 20px;
+        border: 2px solid white;
+        border-radius: 5px;
+        display: block;
+        width: 70px;
+    }
+    /*section one*/
+    /*section seven*/
+    .S-seven {
+        width: 100%;
+        background-color: #F4F6F4;
+        padding: 10px;
+    }
+    .S-seven p {
+        text-align: center;
+    }
+    .S-seven h2 {
+        text-align: center;
+    }
+    .S-seven article {
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 30px;
+        column-gap: 2px;
+    }
+    .S-seven article img {
+        margin: auto;
+    }
+    /*section seven*/
+    /*section nine*/
+    .S-nine {
+        width: 100%;
+        background-color: #393939;
+        display: grid;
+        grid-template-columns: auto;
+        column-gap: 30px;
+        color: #fff;
+        margin-bottom: 0;
+        font-size: 12px;
+    }
+    .S-nine h5 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .S-nine p,
+    .S-nine a {
+        text-align: center;
+    }
+    .S-nine a {
+        color: #fff;
+        text-decoration: none;
+    }
+    /*section nine*/
+}
+
+
+/*media queries 2*/
+
+
+/*media queries 3*/
+
+
+/*media queries 3*/
