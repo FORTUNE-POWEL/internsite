@@ -179,7 +179,7 @@ header nav ul li [target="_blank"]:hover {
 
 .S-two p {
     color: #4E5652;
-    margin: 0 50px;
+    margin: 0 20px;
 }
 
 
@@ -464,7 +464,7 @@ footer {
     /*section two*/
     .S-two p {
         color: #4E5652;
-        margin: 0 80px;
+        margin: 0 20px;
         line-height: 2em;
     }
     /*section two*/
@@ -489,7 +489,7 @@ footer {
         margin: 0 60px;
     }
     .S-three p.first {
-        margin: 0 80px;
+        margin: 0 20px;
         line-height: 2em;
     }
     .S-three h3 {
@@ -512,11 +512,11 @@ footer {
         background-color: #F4F6F4;
     }
     .s-four h2 {
-        margin: 0 50px;
+        margin: 0 20px;
     }
     .S-four p {
         color: #4E5652;
-        margin: 0 50px;
+        margin: 0 20px;
         line-height: 2em;
     }
     .S-four section {
@@ -528,7 +528,7 @@ footer {
     .S-five h2,
     .S-five p {
         text-align: center;
-        margin: 0 80px;
+        margin: 0 20px;
         line-height: 2em;
     }
     .S-five a[title="Involved"] {
@@ -569,11 +569,11 @@ footer {
     }
     .S-six h2 {
         text-align: left;
-        margin: 0 50px;
+        margin: 0 20px;
     }
     .S-six p {
         text-align: justify;
-        margin: 0 50px;
+        margin: 0 20px;
         line-height: 2em;
     }
     .S-six figure {
@@ -605,7 +605,7 @@ footer {
     }
     .S-seven p {
         text-align: justify;
-        margin: 0 50px;
+        margin: 0 20px;
         line-height: 2em;
     }
     .S-seven h2 {
@@ -634,7 +634,7 @@ footer {
     }
     .S-eight p {
         text-align: justify;
-        margin: 0 70px;
+        margin: 0 20px;
         line-height: 2em;
     }
     /*section eight*/
