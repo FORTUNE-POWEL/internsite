@@ -8,12 +8,26 @@
     src: url(OpenSans.ttf);
 }
 
+img:hover {
+    transform: scale3d(1.01, 1.01, 1.01);
+    transition: transform 0.5s;
+}
+
+.sub-body a:hover {
+    transform: scale3d(1.05, 1.05, 1.05);
+    transition: transform 0.5s;
+}
+
 body {
     /* background-color: #567292;*/
     margin: 0;
     padding: 0;
     font-family: 'open sans';
     overflow-x: hidden;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 h2 {
@@ -76,8 +90,28 @@ header nav ul li [target="_blank"] {
 
 header nav ul li [target="_blank"]:hover {
     text-decoration: underline;
-    transition: 1s;
+    transition: text-decoration 0.3s;
 }
+
+
+/*program drop down*/
+
+.drop-down-content {
+    box-shadow: 1px 1px 7px gray;
+    padding: 15px 20px;
+    border-radius: 5px;
+    position: absolute;
+    margin: auto;
+    background-color: #fff;
+    display: none;
+}
+
+.drop-down:hover .drop-down-content {
+    display: block;
+}
+
+
+/*program drop down*/
 
 
 /*navigation bar*/
@@ -145,6 +179,7 @@ header nav ul li [target="_blank"]:hover {
 
 .S-two p {
     color: #4E5652;
+    margin: 0 50px;
 }
 
 
@@ -311,6 +346,7 @@ header nav ul li [target="_blank"]:hover {
     color: #fff;
     margin-bottom: 0;
     font-size: 12px;
+    padding: 20px;
 }
 
 .S-nine h5 {
@@ -396,7 +432,9 @@ footer {
     header nav ul {
         list-style-type: none;
         display: none;
-        transition: 0.5s;
+        background-color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 1px 1px 7px gray;
     }
     header nav:hover ul {
         display: block;
@@ -411,13 +449,25 @@ footer {
         font-size: 15px;
         padding: 15px 20px;
     }
+    header nav ul li a:hover {
+        text-decoration: underline;
+    }
     header nav ul li [target="_blank"] {
         background-color: #06752E;
         color: #fff;
         border-radius: 3px;
         margin-right: 20px;
+        margin-bottom: 5px;
+        display: block;
     }
     /*navigation bar*/
+    /*section two*/
+    .S-two p {
+        color: #4E5652;
+        margin: 0 80px;
+        line-height: 2em;
+    }
+    /*section two*/
     /*section three*/
     .S-three section {
         display: grid;
@@ -436,6 +486,11 @@ footer {
     .S-three p {
         color: #4E5652;
         text-align: justify;
+        margin: 0 60px;
+    }
+    .S-three p.first {
+        margin: 0 80px;
+        line-height: 2em;
     }
     .S-three h3 {
         color: #1BAE70;
@@ -456,11 +511,16 @@ footer {
         grid-template-columns: auto;
         background-color: #F4F6F4;
     }
+    .s-four h2 {
+        margin: 0 50px;
+    }
     .S-four p {
         color: #4E5652;
+        margin: 0 50px;
+        line-height: 2em;
     }
     .S-four section {
-        text-align: center;
+        text-align: left;
         padding: 20px;
     }
     /*section four*/
@@ -468,6 +528,8 @@ footer {
     .S-five h2,
     .S-five p {
         text-align: center;
+        margin: 0 80px;
+        line-height: 2em;
     }
     .S-five a[title="Involved"] {
         background-color: #1BAE70;
@@ -506,13 +568,16 @@ footer {
         padding: 20px;
     }
     .S-six h2 {
-        text-align: center;
+        text-align: left;
+        margin: 0 50px;
     }
     .S-six p {
         text-align: justify;
+        margin: 0 50px;
+        line-height: 2em;
     }
     .S-six figure {
-        margin: auto;
+        margin: 2em auto;
         width: 80%;
     }
     .S-six figure img {
@@ -539,7 +604,9 @@ footer {
         padding: 10px;
     }
     .S-seven p {
-        text-align: center;
+        text-align: justify;
+        margin: 0 50px;
+        line-height: 2em;
     }
     .S-seven h2 {
         text-align: center;
@@ -567,6 +634,8 @@ footer {
     }
     .S-eight p {
         text-align: justify;
+        margin: 0 70px;
+        line-height: 2em;
     }
     /*section eight*/
 }
