@@ -412,6 +412,7 @@ form textarea {
     border-radius: 7px;
     -moz-transition: background-color 0.3s;
     transition: background-color 0.3s;
+    padding: 20px;
 
 
  }
@@ -882,16 +883,31 @@ footer {
         text-decoration: none;
     }
 
+    /*section nine*/
+
+    /*section eleven*/
+
+    
     .S-eleven{
         grid-template-columns: 90%;
         text-align: center;
         margin: auto;
     }
 
-.S-twelve{
-    grid-template-columns: auto;
-}
-    /*section nine*/
+    .S-eleven form input, .S-eleven
+    form textarea {
+    width: 95%;
+    }
+    /*Sectioin eleven*/
+
+
+     /*Sectioin tweleve*/
+     .S-twelve{
+        grid-template-columns: auto;
+        }
+
+      /*Sectioin twelve*/
+
 }
 
 
